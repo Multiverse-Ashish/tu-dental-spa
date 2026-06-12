@@ -53,13 +53,37 @@
   <main>
     <!-- Hero Section -->
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content reveal-up">
+      <!-- Background Slideshow -->
+      <div class="hero-bg-slideshow">
+        <div class="hero-bg-slide active" style="background-image: url('assets/hero_clinic.png');"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/clinic_consultation.png');"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/clinic_treatment.png');"></div>
+      </div>
+      
+      <!-- Center Content Card -->
+      <div class="container" style="position: relative; z-index: 3;">
+        <div class="hero-card reveal-up">
           <div class="hero-subtitle">Architecting Beautiful, Healthy Smiles</div>
           <h1 class="hero-title"><span class="gradient-text">Premium Dentistry</span> Redefined.</h1>
           <p class="hero-description">
             Where cutting-edge clinical technology meets visual artistry. Tu Dental SPA provides an upscale, comfortable dental experience tailored to elite smile restoration.
           </p>
+          
+          <div class="hero-stats-row">
+            <div class="hero-stat">
+              <div class="hero-stat-num">15k+</div>
+              <div class="hero-stat-label">Smiles Refined</div>
+            </div>
+            <div class="hero-stat border-middle">
+              <div class="hero-stat-num">99.4%</div>
+              <div class="hero-stat-label">Satisfaction Rate</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">12+ Yrs</div>
+              <div class="hero-stat-label">Cosmetic Experience</div>
+            </div>
+          </div>
+
           <div class="hero-actions">
             <a href="#booking" class="btn btn-primary">
               Book Consultation
@@ -69,20 +93,6 @@
               </svg>
             </a>
             <a href="#transformations" class="btn btn-secondary">View Transformations</a>
-          </div>
-        </div>
-        
-        <div class="hero-image-wrapper reveal-right">
-          <img src="assets/hero_clinic.png" alt="Tu Dental SPA Luxury Clinic Lobby" class="hero-image">
-          <div class="hero-glass-card">
-            <div class="hero-stat">
-              <div class="hero-stat-num">15k+</div>
-              <div class="hero-stat-label">Smiles Refined</div>
-            </div>
-            <div class="hero-stat" style="border-left: 1px solid var(--glass-border);">
-              <div class="hero-stat-num">99.4%</div>
-              <div class="hero-stat-label">Satisfaction Rate</div>
-            </div>
           </div>
         </div>
       </div>

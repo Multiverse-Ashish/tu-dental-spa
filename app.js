@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
+  initHeroSlideshow();
   initComparison();
   initBooking();
   initCarousel();
@@ -465,6 +466,23 @@ function initScrollReveal() {
   });
 
   elements.forEach(el => observer.observe(el));
+}
+
+/* ==========================================
+   9. HERO BACKGROUND SLIDESHOW
+   ========================================== */
+function initHeroSlideshow() {
+  const slides = document.querySelectorAll('.hero-bg-slide');
+  if (!slides.length) return;
+
+  let currentSlide = 0;
+  const slideInterval = 5000;
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }, slideInterval);
 }
 
 
